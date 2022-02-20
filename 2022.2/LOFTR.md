@@ -48,5 +48,12 @@ Here are the codes for postions encoding; 0::4 means that taking the indexs whic
                 sim_matrix[:, :L, :S].masked_fill_(
                     ~(mask_c0[..., None] * mask_c1[:, None]).bool(),
                     -INF)
-python中map(func,iterable)代表的是迭代式地调用函数func，在上述例子中，map(lambda feat:feat/feat.shape[-1]**.5,[feat_c0,feat_c1])，迭代地调用了lamdba中定义的函数 
+python中map(func,iterable)代表的是迭代式地调用函数func，在上述例子中，map(lambda feat:feat/feat.shape[-1]**.5,[feat_c0,feat_c1])，迭代地调用了lamdba中定义的函数。
+
+在这里我们需要看一下torch.einsum()函数，这是一个张量运算的方式，例如torch.einsum("nlc,nsc->nls", A, B)我们令其输出为C，则C为三维张量nls.
+
+
+
+
+![image](https://user-images.githubusercontent.com/62553342/154843957-4f2728bb-4832-4939-b855-78cb57b79b59.png)
 
