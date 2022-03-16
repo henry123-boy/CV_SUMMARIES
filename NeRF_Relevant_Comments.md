@@ -14,7 +14,9 @@
   
   strengthness:
   
-                 1、relative good pose estimation; (which does not use any matching methods)
+                 1、relative good pose estimation; (which does not use any matching methods);
+                 
+                 2、the project owns a very clear and rational structure;
                  
 + NeRF--
 + NeRF++
