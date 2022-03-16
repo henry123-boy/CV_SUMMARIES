@@ -18,6 +18,10 @@
                  
                  2、the project owns a very clear and rational structure;
                  
+  notes:
+  
+                 1、during the test-time, barf can do the optimization for better rendering results, cause the poses provided by colmap may not correspond to the trained barf (colmap pose may be inaccurate); if you ban the test optimization, it will cause the disalignment for the gt and renderred;
+                 
 + NeRF--
 + NeRF++
 
