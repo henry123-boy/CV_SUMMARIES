@@ -30,3 +30,23 @@
 # Generalized works
 
 + pixnerf https://github.com/sxyu/pixel-nerf
+
+
+# Other Representation for Filed
+
+## Feature Grid
+
++ NICESLAM
++ Plenoctree
++ Plenoxel
+
+## MLP
+
++ NeRF
++ UNISURF
+
+## Tensorial Representation
+
++ TensoRF: Tensorial Radiance Fields
+
+**Comments**: without any doubt, the MLP is the most compat representation for a scene, whose complexness is o(1) and this is also the powerful advantage for implicit representation; and 3D grid explicitly represents a scene by o(N3) grid; However, the grid is actually a kind of tensor, so in the TensoRF, the author naturally uses the tensor decomposition techniques to reduce the complexity from o(N3) to o(N2) or o(N1).
