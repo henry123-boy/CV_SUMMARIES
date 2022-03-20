@@ -11,6 +11,8 @@
                  1、slow inference speed;
                  
                  2、bad geometry accuracy especially transfer its depth map into pointclouds;
+
+                 3、the same cost time to origianl nerf, which is around 6s to render a 640*480 image;
   
   strengthness:
   
